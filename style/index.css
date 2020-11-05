@@ -24,3 +24,172 @@ vertical-align: baseline;
 a:link, a:visited, a:hover, a:active, a:focus {
     text-decoration: none;
 }
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    min-height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    background: #4c4b5e;
+}
+.top-bar {
+    background: #7d7b91;
+}
+.top-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+}
+.logo span {
+    color: #232539;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+.primary-nav ul {
+    list-style-type: none;
+    display: flex;
+}
+.primary-nav a {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.3rem;
+    padding: 25px 0;
+    margin-left: 40px;
+    border-bottom: 5px solid transparent;
+    transition: all .2s linear;
+}
+.primary-nav a:hover {
+    color: #212337;
+    border-bottom: 5px solid #dfdfe1;
+}
+.hero {
+    flex: 1 1 auto;
+    min-height: 700px;
+    background-image: linear-gradient(to bottom right, #292c40, #121428);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    border-radius: 0 0 50px 50px;
+}
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 480px;
+    background: url('../img/lines.png') no-repeat center;
+    background-size: cover;
+}
+.hero .content {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+h1 {
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 4rem;
+}
+.hero h2 {
+    font-weight: 200;
+    font-style: italic;
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+.button {
+    display: inline-block;
+    border: 3px solid #fff;
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.3rem;
+    padding: 20px;
+    min-width: 260px;
+    background: url('../img/button-hover.png') no-repeat top right -190px;
+    background-size: 0%;
+    transition: all .2s linear;
+}
+.button:hover {
+    background-position: top right -90px;
+    background-size: auto;
+}
+.button span {
+    position: relative;
+    left: 0;
+    transition: all .2s linear;
+}
+.button:hover span {
+    left: -25px;
+}
+#projects {
+    background: #4c4b5e;
+    padding: 20px 0;
+}
+#projects .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+}
+.project-card {
+    flex: 1 1 30%;
+    margin: 20px;
+}
+.project-image {
+    padding-top: 100%;
+}
+.project-1 .project-image {
+    background: url('../img/recipe-img.PNG') no-repeat top left;
+    background-size: cover;
+}
+.project-2 .project-image {
+    background: url('../img/trivia-img.PNG') no-repeat top left;
+    background-size: cover;
+}
+.project-3 .project-image {
+    background: url('../img/psd-img.PNG') no-repeat top left;
+    background-size: cover;
+}
+.project-4 .project-image {
+    background: url('../img/colors-img.PNG') no-repeat center;
+    background-size: cover;
+}
+.project-5 .project-image {
+    background: url('../img/user-img.PNG') no-repeat center;
+    background-size: cover;
+}
+.project-6 .project-image {
+    background: url('../img/ypsi-img.PNG') no-repeat top right;
+    background-size: cover;
+}
+.project-content {
+    padding: 15px 10px 0;
+}
+.project-content h3 {
+    text-align: center;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.1rem;
+    font-style: italic;
+}
+footer {
+    background: #1a1831;
+    padding: 70px 20px;
+    text-align: center;
+}
