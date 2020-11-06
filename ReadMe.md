@@ -46,7 +46,7 @@ The following goals are designed to stretch your knowledge and may require addit
 
 - [ ] Make your webpage work at different browser widths, including mobile
 - [x] Add CSS animations
-- [ ] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
+- [x] Design and execute your own wireframe for `About`, `Projects`, and `Contact` pages
 - [ ] Host your website on Netlify.com
 
 ## FAQs
