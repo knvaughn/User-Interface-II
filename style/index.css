@@ -52,6 +52,9 @@ header {
     justify-content: space-between;
     align-items: center;
 }
+.logo {
+    z-index: 999;
+}
 .logo a {
     display: flex;
     align-items: center;
@@ -309,6 +312,9 @@ footer {
     align-items: center;
     position: relative;
 }
+#contact-me .left {
+    z-index: 998;
+}
 #contact-me .right {
     flex: 0 1 35%;
 }
@@ -369,9 +375,7 @@ footer {
     background: url('../img/lines-2.png') no-repeat bottom left;
     background-size: 100% auto;
 }
-.logo {
-    z-index: 999;
-}
-#contact-me .left {
-    z-index: 998;
+/*Projects*/
+#projects header {
+    min-height: initial;
 }
