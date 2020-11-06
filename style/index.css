@@ -153,6 +153,11 @@ h1 {
 }
 .project-image {
     padding-top: 100%;
+    transition: all .15s linear;
+}
+.project-image:hover {
+    box-shadow: 10px 10px 15px rgba(0,0,0,.2);
+    transform: scale(1.02);
 }
 .project-1 .project-image {
     background: url('../img/recipe-img.PNG') no-repeat top left;
