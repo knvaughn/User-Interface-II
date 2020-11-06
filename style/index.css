@@ -24,6 +24,12 @@ vertical-align: baseline;
 a:link, a:visited, a:hover, a:active, a:focus {
     text-decoration: none;
 }
+strong {
+    font-weight: bold;
+}
+em {
+    font-style: italic;
+}
 body {
     font-family: 'Roboto', sans-serif;
 }
@@ -238,7 +244,7 @@ footer {
 #about h1 span {
     display: block;
 }
-#about-me .line {
+.line {
     height: 3px;
     background: #dfdfe1;
     max-width: 320px;
@@ -246,7 +252,7 @@ footer {
 }
 #about-me p {
     line-height: 1.5;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .social-links {
     display: flex;
@@ -272,4 +278,100 @@ footer {
 }
 .social-links a:hover {
     color: #fff;
+}
+/*Contact*/
+#contact #wrapper {
+    display: flex;
+    flex-flow: column nowrap;
+    min-height: 100vh;
+}
+#contact main {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+}
+#contact header {
+    min-height: initial;
+}
+#contact-me {
+    background: #1a1831;
+    color: #fff;
+    font-weight: 200;
+    font-size: 1.3rem;
+    padding: 150px 0px;
+    flex: 1 1 auto;
+    overflow: hidden;
+}
+#contact-me .container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+#contact-me .right {
+    flex: 0 1 35%;
+}
+#contact-me h1 {
+    font-size: 3rem;
+}
+#contact-me h1 span {
+    display: block;
+}
+#contact-me p {
+    margin-bottom: 10px;
+}
+.contact-links {
+    margin-top: 15px;
+}
+.contact-links a {
+    color: #fff;
+    display: block;
+    margin-bottom: 10px;
+}
+.contact-links i {
+    margin-right: 10px;
+}
+.profile-image {
+
+    padding-top: 100%;
+    border-radius: 50%;
+    background: url('../img/me.jpg') no-repeat center;
+    background-size: cover;
+}
+#contact .social {
+    border-color: #7d7b91;
+}
+#contact .social:hover {
+    border-color: #fff;
+}
+#contact .social-links a {
+    color: #7d7b91;
+}
+#contact .social-links a:hover {
+    color: #fff;
+}
+.lines-left {
+    width: 400px;
+    height: 800px;
+    position: absolute;
+    bottom: 0;
+    left: -200px;
+    background: url('../img/lines.png') no-repeat center;
+    background-size: cover;
+}
+.lines-right {
+    width: 200px;
+    height: 800px;
+    position: absolute;
+    bottom: -200px;
+    right: -50px;
+    background: url('../img/lines-2.png') no-repeat bottom left;
+    background-size: 100% auto;
+}
+.logo {
+    z-index: 999;
+}
+#contact-me .left {
+    z-index: 998;
 }
