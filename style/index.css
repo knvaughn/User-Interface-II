@@ -21,6 +21,12 @@ font-size: 100%;
 font: inherit;  
 vertical-align: baseline;  
 }
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
 a:link, a:visited, a:hover, a:active, a:focus {
     text-decoration: none;
 }
@@ -378,4 +384,119 @@ footer {
 /*Projects*/
 #projects-page header {
     min-height: initial;
+}
+/*Responsive*/
+@media screen and (min-width: 1201px) {
+    .toggle-menu, .close-menu {display: none;}
+    .primary-nav ul {display: flex;}
+}
+@media screen and (max-width: 1200px) {
+    .toggle-menu, .close-menu {
+        color: #fff;
+        font-size: 1.3rem;
+    }
+    .close-menu {
+        display: none;
+    }
+    .logo img {
+        width: 35px;
+    }
+    .logo span {
+        font-size: 2rem;
+    }
+    .primary-nav ul {
+        display: none;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        z-index: 9999;
+        flex-flow: column nowrap;
+        background: #7d7b91;
+        border-top: 1px solid #aaaac2;
+    }
+    .primary-nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #aaaac2;
+    }
+    .primary-nav ul li a {
+        display: inline-block;
+        width: 100%;
+        margin: 0;
+        padding: 15px 20px;
+        border: none;
+    }
+    .primary-nav ul li a:hover {
+        border: none;
+    }
+    .hero {
+        overflow: hidden;
+    }
+    .hero::after {
+        right: -200px;
+    }
+    .lines-left {
+        left: -250px;
+    }
+}
+@media screen and (min-width: 901px) {
+    #about-me .left {
+        padding-right: 50px;
+    }
+}
+@media screen and (max-width: 900px) {
+    #about-me h1 {
+        font-size: 2.5rem;
+    }
+    .logo img {
+        width: 27px;
+    }
+    .logo span {
+        font-size: 1.6rem;
+    }
+    .primary-nav ul {
+        top: 60px;
+    }
+    .line {
+        margin: 30px 0 30px;
+    }
+    .hero {
+        min-height: 500px;
+    }
+    .hero .content {
+        padding: 20px;
+    }
+    .hero::after {
+        right: -300px;
+    }
+    .project-content h3 {
+        font-size: 1rem;
+    }
+    #about-me {
+        padding: 50px 0;
+    }
+    #about-me .left {
+        flex: 1 1 100%;
+    }
+    #about-me .right .button {
+        margin: 30px auto;
+    }
+    .social-links {
+        justify-content: center;
+    }
+    .lines-left {
+        left: -280px;
+        top: -280px;
+    }
+    #contact-me h1 {
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .social {
+        font-size: 1.3rem;
+        width: 50px;
+        height: 50px;
+        margin: 0 10px;
+    }
 }
