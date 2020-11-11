@@ -448,12 +448,12 @@ footer {
         left: 0;
     }
 }
-@media screen and (min-width: 901px) {
+@media screen and (min-width: 801px) {
     #about-me .left {
         padding-right: 50px;
     }
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 800px) {
     #about-me h1 {
         font-size: 2.5rem;
     }
@@ -501,7 +501,7 @@ footer {
         font-size: 2.5rem;
     }
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     .social {
         font-size: 1.3rem;
         width: 50px;
