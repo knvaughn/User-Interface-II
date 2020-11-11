@@ -394,6 +394,8 @@ footer {
     .toggle-menu, .close-menu {
         color: #fff;
         font-size: 1.3rem;
+        background: none;
+        border: none;
     }
     .close-menu {
         display: none;
